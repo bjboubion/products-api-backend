@@ -1,10 +1,10 @@
-# Zymo Products REST API
+# Products REST API
 ---
 
 ### Description
 This is the API that will interface with the Products Database.
 
-Due to the complexity inherent in Zymo's requirements, we decided to architect this application with a Domain Driven Design. This means that objects should not only be data holders for the application, but should also help maintain it's own state and business logic. As such, validation, business rules, etc. should be contained within domain models and Services will orchestrate these dynamic models to reach an end goal. 
+To address complex requirements, I decided to architect this application with a Domain Driven Design. This means that objects should not only be data holders for the application, but should also help maintain it's own state and business logic. As such, validation, business rules, etc. should be contained within domain models and Services will orchestrate these dynamic models to reach an end goal. 
 
 ##### Fun Fact! Models that act as simple types and/or data holders are called "anemic" models, whereas the Domain models we will be discussing are "rich" models.
 
@@ -61,10 +61,9 @@ public async Task LayerBeingTested_MethodBeingTested_ExpectedResult()
 ---
 ### Deployment
 
-Currently, there is one branch (master) that is connected to Azure CI/CD Pipelines. In essence, this means that merges into master will trigger a Pipeline to build and publish the code. This will become more effective once we include tests in the Pipeline.
+TBD
 
 ---
 ### Authors and Maintainers 
 * Bryan Boubion
-* Michael Foss
 ---
