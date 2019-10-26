@@ -37,8 +37,7 @@ namespace products_api
             services.AddCors(options => 
             {
                 options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("https://distributor-dev.zymoresearch.com/", 
-                                                    "https://localhost:4200/", 
+                    builder => builder.WithOrigins("https://localhost:4200/", 
                                                     "http://localhost:3002", 
                                                     "https://localhost:5001")
                                         .AllowAnyHeader()
